@@ -9,4 +9,4 @@ use Inertia\Inertia;
 
 Route::get('/', [PostController::class, 'index'])->name('post.index');
 Route::get('/register', [Authenticatable::class, 'register'])->name('auth.register');
-Route::Get('/posts/{post}', [PostController::class, 'show'])
+Route::get('/posts/{post}', [PostController::class, 'show'])->name('post.show');
